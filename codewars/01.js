@@ -1,4 +1,9 @@
-function filter_list(l) {
-    let output = l.filter((i) => i === +i);
-    return output;
+function validatePIN (pin) {
+    if(+pin.length === 4 || +pin.length === 6) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+validatePIN("123");
